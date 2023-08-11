@@ -1,3 +1,5 @@
+{% laod staic %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
 </head>
-<body>
+<body> 
+    {% block contents %}
     <section>
         <header></header>
     </section> 
@@ -19,6 +22,7 @@
 
     </main> 
     <footer>
-    </footer>
+    </footer> 
+    {% endblock %}
 </body>
 </html>
