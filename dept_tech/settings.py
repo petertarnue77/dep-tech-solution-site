@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     "deptechApp",
     "rest_framework", 
     "djoser", 
+    
 ]
 
 MIDDLEWARE = [
