@@ -78,18 +78,34 @@ nav ul a:active {
 nav ul a:hover {
     text-decoration: underline;
     text-decoration-thickness: 0.1rem;
+} 
+
+/* second section layout */ 
+.img22 {
+    width: 200px;
+    height: 150px;
 }
 
+.text1 {
+    font-size: 20px;
+    padding-left: 20px;
+} 
+
+
+/* Layout of verious section tag on the pages */
 section {
     display: flex;
     gap: 2rem 1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    flex-direction: row;
+    flex-direction: row; 
+    padding-bottom: 2px;
 }
 
+/* Layout of various article tag on the pages */
 article {
-    flex:1;
+    flex:1; 
+    padding-bottom: 2px;
 }
 
 article img {

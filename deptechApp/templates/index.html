@@ -2,12 +2,65 @@
 
 {% load static %}
 
-{% block content %}
+{% block content %}  
+
 <section>
     <article id="hero">
       <h2 class="heading_shadow"></h2>
       {% comment %} <p>30% Off This Weekend</p>
       <a href="#" class="cta"> Book now </a> {% endcomment %}
+    </article>
+  </section> 
+
+  <section>
+    <article>
+      <div class="row">
+        <div class="column"> 
+          <h3>
+            We create with smiles and deliver with a sure touch.
+          </h3>
+          <p>
+            At <b>Detpech Solutions</b>
+            Our strategies are designed with our customers as our topmost priority, and we create solutions 
+            tailored to meet their needs. But that’s just the tip of the iceberg. We are revolutionizing 
+            the way technology meets human demands, making it more user-friendly and positively impactful. 
+            After all, when you give technology a mind, it can do amazing things.
+          </p>
+        </div>
+        <div>
+          <figure class="figure">
+            <img
+              src="{% static 'image/dept1.png' %}"
+              alt="Software Engineer"
+              width="200px" height="200"
+              style="margin-left: 180px;"
+            />
+            <!-- <figcaption class="figure-caption" align="center">
+              Software Engineer
+            </figcaption> -->
+          </figure>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section style="background-color: #003c40;">
+    <article>
+      <div class="row">
+        <div class="column">
+          <h3 style="color: aliceblue;">We turn passions to possibilities</h3>
+          <p style="color: aliceblue;">
+            Our mission is to pave the path of technological innovation, with a primary focus on nurturing 
+            opportunities for the passionate, enabling them to thrive and succeed through our Dep Developer Program. <br>
+            <br>
+            Apply for Deptech Developer Program 
+          </p>
+
+        </div> 
+        <div class="column">
+
+        </div>
+      </div>
     </article>
   </section>
 
@@ -46,6 +99,5 @@
         <li>Sun: 2pm - 9pm</li>
       </ul>
     </article>
-
   </section>
 {% endblock %}
