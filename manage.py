@@ -3,10 +3,21 @@
 import os
 import sys
 
+from dept_tech.settings import base_settings, production_settings
+
 
 def main():
+    if base_settings.DEBUG:
+        os.environ.setdefault(
+            "DJANGO_SETTINGS_MODULE", "dept_tech.settings.local_settings"
+        )
+    else:
+        os.environ.setdefault(
+            "DJANGO_SETTINGS_MODULE", "dept_tech.settings.production_settings"
+        )
+
     """Run administrative tasks."""
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "dept_tech.settings")
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "dept_tech.settings.local_settings")
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:

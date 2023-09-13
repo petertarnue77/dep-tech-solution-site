@@ -9,8 +9,11 @@ https://docs.djangoproject.com/en/4.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
-
+import os
 from pathlib import Path
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,7 +23,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-k3_fxen2fqn=f@*-l-qp!b2=_sd(#dfawb(1fp0golkhqzxzoo"
+# Secure Secret Key
+SECRET_KEY = os.environ.get("SECRET_KEY")
+
+# SECRET_KEY = "k8+#*@9go0w2_s_n3gcp@d37u1-s=0q)b@_s8j)us+$@-rg#=j"
+
+# SECRET_KEY = "django-insecure-k3_fxen2fqn=f@*-l-qp!b2=_sd(#dfawb(1fp0golkhqzxzoo"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -72,17 +80,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = "dept_tech.wsgi.application"
-
-
-# Database
-# https://docs.djangoproject.com/en/4.1/ref/settings/#databases
-
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
-    }
-}
 
 
 # Password validation
