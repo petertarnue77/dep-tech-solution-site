@@ -251,6 +251,20 @@ footer p {
     font-size: 1rem;
 }
 
+#jm {
+    width: 198px;
+    height: 400px;
+}
+  
+  #jm .jm-c {
+    position:relative ;
+    width: 198px;
+    height: 400px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
 @media (max-width: 800px) {
     section {
         flex-direction: column;   
@@ -269,3 +283,4 @@ footer p {
         width: 100%;
     }
   }
+

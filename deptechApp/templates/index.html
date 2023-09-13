@@ -3,7 +3,9 @@
 {% load static %}
 
 {% block content %}  
-
+<head>
+ 
+</head>
 <section>
     <article id="hero">
       <h2 class="heading_shadow"></h2>
@@ -35,9 +37,6 @@
               width="200px" height="200"
               style="margin-left: 180px;"
             />
-            <!-- <figcaption class="figure-caption" align="center">
-              Software Engineer
-            </figcaption> -->
           </figure>
         </div>
       </div>
@@ -55,10 +54,12 @@
             <br>
             Apply for Deptech Developer Program 
           </p>
-
         </div> 
-        <div class="column">
-
+        <div class="column" id="jm">
+            <img class="jm-c"
+              src="{% static 'image/jonathan_dp.png' %}"
+              width="98px" height="699"
+            />
         </div>
       </div>
     </article>
@@ -75,5 +76,6 @@
     <li>Sunday: 3pm - 6pm</li>
   </ul>
 </article>
-  </section>
+</section>
 {% endblock %}
+
