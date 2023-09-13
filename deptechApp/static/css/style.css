@@ -47,7 +47,7 @@ header img {
 
 
 nav {
-    background-color: #495E57;
+    background-color: #003c40;
     margin-top: 1rem;
     margin-bottom: 1rem;
     margin-bottom: 0px;
@@ -58,12 +58,12 @@ nav ul {
     font-size: 1.5rem;
     text-align: center;
     padding-inline-start: 0rem;
-    margin-bottom: 0px;
+    margin-bottom: 0px; 
 }
 
 nav ul li {
     display: inline-block;
-    margin: 0.5rem;
+    margin: 0.5rem; 
 }
 
 nav ul a {
@@ -136,7 +136,7 @@ input{
   }
 
 #hero {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url('../img/restaurant_inside.jpg');
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url('../image/engineer3.jpg');
     background-size: cover;
     background-position: 75%;
     color: white;

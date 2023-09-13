@@ -1,0 +1,29 @@
+{% load static %} 
+<style>
+    .image1 {
+        width: 250px;
+        height: 40px;
+        padding-top: 0px; 
+    }
+      
+    .image1 .img1 {
+        position: left;
+        width: 200px;
+        height: 40px;
+        object-fit: cover; 
+        margin-left: 10px;
+    } 
+
+    footer {
+        background-color: #003c40;
+    }
+</style>
+
+<footer>
+    <article>
+        <a href="#">
+            <div class="image1"><img src="{% static 'image/dept-logo1.png' %}" class="img1"></div>
+          </a>
+          <p style="color: aliceblue;">Copyright Little Lemon</p>
+    </article> 
+</footer>

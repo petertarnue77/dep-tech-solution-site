@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<section>
+    <article id="hero">
+      <h2 class="heading_shadow"></h2>
+      {% comment %} <p>30% Off This Weekend</p>
+      <a href="#" class="cta"> Book now </a> {% endcomment %}
+    </article>
+  </section>
+
+  <section>
+    <article>
+      <h2>Our SERVICE</h2>
+      <img src="{% static 'image/dept-logo1.png' %}">
+      <p>
+        Our Services are available for all category and level of institutions
+      </p>
+      <p>
+        <a href="#">Here are our available services</a>
+      </p>
+    </article>
+
+    <article>
+      <h2>Book a Service</h2>
+      <img src="{% static 'image/dept-logo1.png' %}">
+      <p>
+        Make a booking for a conprehensive and professional service
+      </p>
+      <p>
+        <a href="#">Book a Serivce Now!</a>
+      </p>
+    </article>
+
+    <article>
+      <h2>Opening Hours</h2>
+      <img src="{% static 'image/dept-logo1.png' %}">
+      <p>
+        The Little Lemon Restaurant is open 7 days a week, except for public holidays. 
+      </p>
+      <ul>
+        <li>Mon - Fri: 2pm - 10pm</li>
+        <li>Sat: 2pm - 11pm</li>
+        <li>Sun: 2pm - 9pm</li>
+      </ul>
+    </article>
+
+  </section>
+{% endblock %}

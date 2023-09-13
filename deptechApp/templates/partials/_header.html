@@ -1,0 +1,40 @@
+{% load static %}
+
+<head>
+  <style>
+    .image {
+      width: 65px;
+      height: 10px;
+      padding-top: 0px;
+    }
+    
+    .image .img {
+      position: left;
+      width: 120px;
+      height: 50px;
+      object-fit: cover; 
+      margin-left: 10px;
+    } 
+
+    .ul_1  {
+      padding-left: 500px;
+      font-family: Arial;
+      font-size: medium; 
+      color: aliceblue;
+    } 
+  </style>
+
+<nav>
+  <a href="#">
+    <div class="image"><img src="{% static 'image/dept-logo1.png' %}" class="img"></div>
+  </a>
+  
+  <ul class="ul_1">
+    <li><a href="#">For Business</a></li>
+    <li><a href="#">Talents</a></li>
+    <li><a href="#">Our Solutions</a></li>
+    <li><a href="#">Why we exist</a></li>
+  </ul> 
+</nav>
+
+
